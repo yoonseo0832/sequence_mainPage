@@ -14,15 +14,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: black;
+            background-color: #151515;
+            width: 1920px;
+            margin: 0 auto;
+            overflow-x: hidden;
         }
 
         ul {
             list-style: none;
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            /*flex-direction: column;*/
+            justify-content: center;
+            width: 100%;
         }
 
         ul li a {
@@ -33,33 +36,389 @@
             font-weight: 500;
             font-family: 'Playfair Display';
         }
-        .header-menu{
 
+        .header-menu {
+            padding-right: 160px;
         }
-        .alarmicon{
-            
+
+        .alarmicon {
+            padding-left: 360px;
         }
+
+        .earthicon {
+            margin-left: 100px;
+        }
+
         .main-logo {
-            display: flex;          
-            align-items:center;
+            display: flex;
+            align-items: center;
             justify-items: center;
-            z-index: 1;
+            width: 100%;
+            z-index: 100;
+            padding-left: 40px;
         }
 
         .s {
             display: flex;
             position: relative;
             width: clamp(0.8rem, 10vw, 12.5vw);
-            margin-bottom: clamp(1rem, 5vw, 10rem);
             margin: 0 auto;
+            z-index: 100;
         }
 
         .main-logo-text {
             font-size: clamp(4rem, 23.5vw, 100vw);
             color: rgb(227, 41, 41);
-            padding-top: 70px;
+            padding-top: 90px;
             font-family: impact, sans-serif;
-            align-self: flex-end;
+            z-index: 100;
+            padding-left: 25px;
+        }
+
+        img.main-image {
+            position: relative;
+            margin-top: -15vw;
+            display: flex;
+            z-index: 0;
+        }
+
+        .main-text {
+            font-size: 76px;
+            align-items: center;
+            font-weight: 700;
+            font-family: 'SUIT';
+            line-height: 114px;
+            color: #eeeeee;
+            padding-left: 491px;
+            padding-top: 442px;
+        }
+
+        .main-button {
+            display: flex;
+            align-items: center;
+            background: none;
+            font-family: 'SUIT';
+            border: 2px solid red;
+            font-size: clamp(0.8rem, 1.7vw, 3.5rem);
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 42px;
+            cursor: pointer;
+            transition: background 0.3s, color 0.3s;
+            white-space: pre;
+            width: 550px;
+            color: red;
+            position: relative;
+            margin-left: 682px;
+            margin-top: 55px;
+            margin-bottom: 454px;
+        }
+
+        .main-button img {
+            display: flex;
+        }
+
+        .title {
+            font-family: 'Playfair Display';
+            font-weight: 600;
+            font-size: 64px;
+            line-height: 90px;
+            color: #ffffff;
+            margin-left: 345px;
+        }
+
+        .about {
+            display: inline-flex;
+            flex-direction: column;
+        }
+
+        .about img {
+            z-index: 10;
+            width: 540px;
+            height: 570px;
+            position: absolute;
+            margin-top: 401px;
+            margin-left: 661px;
+        }
+
+        .about p {
+            color: #eeeeee;
+            line-height: 40px;
+            font-size: 24px;
+            font-family: 'SUIT';
+            font-weight: 500;
+        }
+
+        #about-p1 {
+            /* margin-top: 36px; */
+            display: block;
+            position: relative;
+            /* margin-left: 345px; */
+            margin: 36px 0 0 345px;
+        }
+
+        #about-p2 {
+            margin-left: 1125px;
+            margin-top: 450px;
+            margin-bottom: 313px;
+            position: relative;
+            z-index: 0;
+        }
+
+        .benefit {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .block-of-text {
+            display: flex;
+            position: relative;
+            margin-top: 21rem;
+        }
+
+        .b-logo {
+            margin-bottom: 119px;
+            width: 135px;
+        }
+
+        .b-text-1 {
+            display: inline;
+            margin: 0;
+            font-weight: 700;
+            font-family: 'SUIT';
+            font-size: 44px;
+            line-height: 66px;
+            color: #eeeeee;
+            margin-bottom: 20px;
+        }
+
+        .b-p-1 {
+            display: inline-block;
+            font-weight: 500;
+            font-family: 'SUIT';
+            font-size: 24px;
+            line-height: 38px;
+            color: #eeeeee;
+            margin: 0;
+        }
+
+        .b-text-2 {
+            display: inline;
+            margin: 0;
+            font-weight: 700;
+            font-family: 'SUIT';
+            font-size: 44px;
+            line-height: 66px;
+            color: #eeeeee;
+            margin-bottom: 20px;
+        }
+
+        .b-p-2 {
+            display: inline-block;
+            font-weight: 500;
+            font-family: 'SUIT';
+            font-size: 24px;
+            line-height: 38px;
+            color: #eeeeee;
+            margin: 0;
+        }
+
+        .b-text-3 {
+            display: inline;
+            margin: 0;
+            font-weight: 700;
+            font-family: 'SUIT';
+            font-size: 44px;
+            line-height: 66px;
+            color: #eeeeee;
+            margin-bottom: 20px;
+        }
+
+        .b-p-3 {
+            display: inline-block;
+            font-weight: 500;
+            font-family: 'SUIT';
+            font-size: 24px;
+            line-height: 38px;
+            color: #eeeeee;
+            margin: 0;
+        }
+
+        .inner-section {
+            display: flex;
+            flex-direction: column;
+            margin: 0 0 0 24px;
+        }
+
+        .block-of-text-3 {
+            display: flex;
+            position: relative;
+            margin-top: 21rem;
+        }
+
+        .benefit-img {
+            margin-left: 350px;
+        }
+
+        .footer-section {
+            width: 100%;
+            min-height: 100vh;
+            position: relative;
+            background: url(https://seungyun-park.github.io/sequence/static/media/WhoMadeImage.8573a1ad206903af4472.png) center center / cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer-textarea {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .footer-title {
+            align-items: center;
+            font-family: 'Playfair Display';
+            font-weight: 600;
+            font-size: 64px;
+            line-height: 90px;
+            color: #ffffff;
+        }
+
+        .title-text {
+            font-family: 'Alike', serif;
+            font-size: 2rem;
+            color: white;
+            width: 100%;
+            text-align: center;
+            margin: 0;
+        }
+
+        .design-dev-section {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .design-dev-part {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            min-width: 300px;
+            padding-top: 34px;
+            padding-left: 52px;
+        }
+
+        .footer-part-text {
+            display: grid;
+            grid-template-columns: 80px 1fr;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .role-text {
+            font-family: "Noto Sans", sans-serif;
+            font-size: 1rem;
+            color: rgb(136, 136, 136);
+            font-style: italic;
+            text-align: right;
+        }
+
+        .name-text {
+            font-family: "Noto Sans", sans-serif;
+            font-size: 1.2rem;
+            color: white;
+            text-align: left;
+            gap: 1rem;
+            font-style: italic;
+        }
+
+        h2#p-title {
+            color: #ffffff;
+            font-size: 80px;
+            font-style: italic;
+            font-family: 'Playfair Display';
+            font-weight: 600;
+            line-height: 112px;
+            margin: -113px 0 0 550px;
+        }
+
+        p#p-p {
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 36px;
+            color: #ffffff;
+            margin: 44px 0 0 352px;
+        }
+
+        section.experience {
+            padding-top: 560px;
+        }
+
+        /*experience*/
+        .experience {
+            color: white;
+        }
+
+        .slider {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slides {
+            display: flex;
+            gap: 24px;
+            animation: scrollRight 30s linear infinite;
+        }
+
+        .card {
+            display: inline-block;
+        }
+
+        .card-box {
+            width: 444px;
+            height: 480px;
+            background-color: #d3d3d3;
+        }
+
+        .card h3 {
+            font-size: 36px;
+            font-weight: 800;
+            line-height: 54px;
+            color: #eeeeee;
+            margin-top: 15px;
+            margin-bottom: 32px;
+        }
+
+        .card p {
+            font-size: 24px;
+            font-family: 'SUIT';
+            font-weight: 600;
+            line-height: 36px;
+            color: #eeeeee;
+            margin-top: 10px;
+        }
+
+        .side-s {
+            margin-left: 895px;
+            margin-bottom: 132px;
+            margin-top: 415px;
+        }
+
+        button#bottom-text {
+            height: 96px;
+            width: 1219px;
+            background-color: #424242;
+            border: none;
+            color: #eeeeee;
+            font-size: 32px;
+            font-weight: 600;
+            font-family: 'SUIT';
+            align-items: center;
+            line-height: 48px;
+            margin-left: 353px;
+            margin-bottom: 700px;
         }
     </style>
 </head>
@@ -89,47 +448,46 @@
         <section class="text-new">
             <div class="main-text">새로운 이야기를 만든다. 시퀀스</div>
             <button class="main-button">
-                <p>프로젝트 올리고 새로운 이야기를 만들어보세요!</p>&nbsp;&nbsp;&nbsp;
-                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em"
-                    width="1em" xmlns="http://www.w3.org/2000/svg" style="font-size: clamp(2rem, 4vw, 8rem);">
-                    <path fill-rule="evenodd"
-                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8">
-                    </path>
-                </svg>
+                <p>프로젝트 올리고 새로운 이야기를 만들어보세요!</p>
+                <img src="image/arrow.png" alt="arrow" width="1em" style="font-size: clamp(2rem, 4vw, 8rem);">
             </button>
         </section>
         <section class="about">
-            <div class="title">About</div>
+            <div class="title" style="margin-top:164px;">About</div>
             <p id="about-p1">시퀀스는 IT 서비스 개발을 원하는 개발,<br>디자인 부문의 대학생들이 모여<br>함께 프로젝트를 진행하는 공간입니다.</p>
-            <img src="" alt="">
+            <img src="image/Group 7.png" alt="logo">
             <p id="about-p2">영화의 주제와 인물들을 소개하는 시퀀스처럼,<br>우리의 만남과 협업이 하나의 영화와 같이<br>새로운 이야기를 만들어내는 것을 목표로 하고 있습니다.</p>
         </section>
         <section class="benefit">
             <div class="title">Benefit</div>
-            <div id="block-of-img">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+            <div class="block-of-text">
+                <img src="image/Frame 55.png" alt="2" class="benefit-img" style="height: 380px; width: 290px;">
+                <div class="inner-section">
+                    <img src="image/Group 9.png" alt="icon" class="b-logo">
+                    <h4 class="b-text-1">개발자와 디자이너의 만남</h4>
+                    <p class="b-p-1">각기 다른 분야의 대학생들이 모여 협업할 수 있는 프로젝트를 시작합니다.</p>
+                </div>
             </div>
-            <div id="block-of-text">
-                <img src="" alt="icon">
-                <h4 class="b-text">개발자와 디자이너의 만남</h4>
-                <p class="b-p">각기 다른 분야의 대학생들이 모여 협업할 수 있는 프로젝트를 시작합니다.</p>
+            <div class="block-of-text">
+                <img src="image/Frame 56.png" alt="2" class="benefit-img" style="height: 380px; width: 290px;">
+                <div class="inner-section">
+                    <img src="image/Group 9.png" alt="icon" class="b-logo">
+                    <h4 class="b-text-2">실제 서비스를 세상에</h4>
+                    <p class="b-p-2">여러분이 만든 웹/앱 서비스가 세상에 출시되어 사용자들의 피드백을 받을 수 있는 경험을 제공합니다.</p>
+                </div>
             </div>
-            <div id="block-of-text">
-                <img src="" alt="icon">
-                <h4 class="b-text">실제 서비스를 세상에</h4>
-                <p class="b-p">여러분이 만든 웹/앱 서비스가 세상에 출시되어 사용자들의 피드백을 받을 수 있는 경험을 제공합니다.</p>
-            </div>
-            <div id="block-of-text">
-                <img src="" alt="icon">
-                <h4 class="b-text">실무에서 필요한 협업 경험</h4>
-                <p class="b-p">대학생들이 다양한 직무와 협업하며 실무에서 요구되는 경험을 쌓을 수 있습니다.</p>
+            <div class="block-of-text-3">
+                <img src="image/benefit-3.png" alt="3" class="benefit-img" style="height: 380px; width: 290px;">
+                <div class="inner-section">
+                    <img src="image/Group 9.png" alt="icon" class="b-logo">
+                    <h4 class="b-text-3">실무에서 필요한 협업 경험</h4>
+                    <p class="b-p-3">대학생들이 다양한 직무와 협업하며 실무에서 요구되는 경험을 쌓을 수 있습니다.</p>
+                </div>
             </div>
         </section>
         <section class="partner">
-            <div class="title">Partner</div>
-            <img src="" alt="wolf-img">
+            <div class="title" style="padding-top: 391px; padding-bottom: 165px;">Partner</div>
+            <img src="image/pexels-simon-robben-55958-464664.png" alt="wolf-img" style="margin-left: 352px;">
             <h2 id="p-title">Underdog Revolution</h2>
             <p id="p-p">
                 세종시 청년 개발자들이 모인 언더독 레볼루션은<br>
@@ -139,7 +497,7 @@
             </p>
         </section>
         <section class="experience">
-            <div class="title">Experience</div>
+            <div class="title" style="margin-bottom: 94px;">Experience</div>
             <div class="slider">
                 <div class="slides">
                     <article class="card">
@@ -195,80 +553,111 @@
                 </div>
             </div>
         </section>
-        <section>
-            <img src="" alt="s">
+        <section style="display: grid;">
+            <img src="image/vext.png" alt="s" class="side-s">
             <button id="bottom-text">새로운 시퀀스를 만들어보세요!</button>
         </section>
-        <footer class="whomade">
-            <div id="title-wm">Who Made</div>
-            <div class="design-dev-part">
-                <div class="footer-part-text">
-                    <span class="role-text">Fontend</span>
-                    <span class="name-text">Choi Bo-kyung</span>
-                </div>
-                <div class="footer-part-text">
-                    <span class="role-text"></span>
-                    <span class="name-text">Jung Joon-yong</span>
-                </div>
-                <div class="footer-part-text">
-                    <span class="role-text"></span>
-                    <span class="name-text">Kim Na-kyung</span>
-                </div>
-                <div class="footer-part-text">
-                    <span class="role-text"></span>
-                    <span class="name-text">Lee Yun-seo</span>
-                </div>
-                <div class="footer-part-text">
-                    <span class="role-text"></span>
-                    <span class="name-text">Park Seung-gyun</span>
-                </div>
-                <div class="footer-part-text">
-                    <span class="role-text">Backend</span>
-                    <span class="name-text">Ha Heon-chan</span>
-                </div>
-                <div class="footer-part-text">
-                    <span class="role-text"></span>
-                    <span class="name-text">Jo Seung-bin</span>
-                </div>
-                <div class="footer-part-text">
-                    <span class="role-text"></span>
-                    <span class="name-text">Kim Dae-jeon</span>
-                </div>
-                <div class="footer-part-text">
-                    <span class="role-text"></span>
-                    <span class="name-text">Kim Min-ji</span>
-                </div>
-                <div class="footer-part-text">
-                    <span class="role-text"></span>
-                    <span class="name-text">Na Gang-min</span>
-                </div>
-                <div class="footer-part-text">
-                    <span class="role-text"></span>
-                    <span class="name-text">Oh Jeong-bin</span>
-                </div>
-                <div class="footer-part-text">
-                    <span class="role-text"></span>
-                    <span class="name-text">Park Kyu-won</span>
-                </div>
-                <div class="footer-part-text">
-                    <span class="role-text"></span>
-                    <span class="name-text">Park So-yeon</span>
-                </div>
-                <div class="footer-part-text">
-                    <span class="role-text"></span>
-                    <span class="name-text">Kim Jae-hwan</span>
+        <footer>
+            <div class="footer-section">
+                <div class="footer-textarea">
+                    <div class="footer-title">Who Made</div>
+                    <div class="design-dev-section">
+                        <h3 class="title-text" style="padding-top: 204px;">Design Team</h3>
+                        <div class="design-dev-part">
+                            <div class="footer-part-text">
+                                <span class="role-text">Designer</span>
+                                <span class="name-text">Hong Yeong-ju</span>
+                            </div>
+                            <div class="footer-part-text">
+                                <span class="role-text"></span>
+                                <span class="name-text">Park So-hyun</span>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br><br>
+                    <div class="design-dev-section">
+                        <h3 class="title-text" style="padding-top: 130px;">Dev Team</h3>
+                        <div class="design-dev-part">
+                            <div class="footer-part-text">
+                                <span class="role-text">Fontend</span>
+                                <span class="name-text">Choi Bo-kyung</span>
+                            </div>
+                            <div class="footer-part-text">
+                                <span class="role-text"></span>
+                                <span class="name-text">Jung Joon-yong</span>
+                            </div>
+                            <div class="footer-part-text">
+                                <span class="role-text"></span>
+                                <span class="name-text">Kim Na-kyung</span>
+                            </div>
+                            <div class="footer-part-text">
+                                <span class="role-text"></span>
+                                <span class="name-text">Lee Yun-seo</span>
+                            </div>
+                            <div class="footer-part-text">
+                                <span class="role-text"></span>
+                                <span class="name-text">Park Seung-gyun</span>
+                            </div>
+                            <div class="footer-part-text">
+                                <span class="role-text">Backend</span>
+                                <span class="name-text">Ha Heon-chan</span>
+                            </div>
+                            <div class="footer-part-text">
+                                <span class="role-text"></span>
+                                <span class="name-text">Jo Seung-bin</span>
+                            </div>
+                            <div class="footer-part-text">
+                                <span class="role-text"></span>
+                                <span class="name-text">Kim Dae-jeon</span>
+                            </div>
+                            <div class="footer-part-text">
+                                <span class="role-text"></span>
+                                <span class="name-text">Kim Min-ji</span>
+                            </div>
+                            <div class="footer-part-text">
+                                <span class="role-text"></span>
+                                <span class="name-text">Na Gang-min</span>
+                            </div>
+                            <div class="footer-part-text">
+                                <span class="role-text"></span>
+                                <span class="name-text">Oh Jeong-bin</span>
+                            </div>
+                            <div class="footer-part-text">
+                                <span class="role-text"></span>
+                                <span class="name-text">Park Kyu-won</span>
+                            </div>
+                            <div class="footer-part-text">
+                                <span class="role-text"></span>
+                                <span class="name-text">Park So-yeon</span>
+                            </div>
+                            <div class="footer-part-text">
+                                <span class="role-text"></span>
+                                <span class="name-text" style="padding-bottom: 120px;">Kim Jae-hwan</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </footer>
     </main>
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
+        document.addEventListener("DOMContentLoaded", function () {
             const slides = document.querySelector(".slides");
+            let scrollAmount = 0;
+            const slideWidth = document.querySelector(".card");
 
-            // 클론 노드를 생성하여 무한 루프처럼 보이게 함
-            const clone = slides.cloneNode(true);
-            slides.parentNode.appendChild(clone);
+            function autoScroll() {
+                scrollAmount += 1.5;
+                slides.style.transform = `translateX(-${scrollAmount}px)`;
+
+                if (scrollAmount >= slides.scrollWidth / 2) {
+                    scrollAmount = 0;
+                }
+            }
+
+            setInterval(autoScroll, 50); 
         });
+
     </script>
 </body>
 

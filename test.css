@@ -1,0 +1,27 @@
+.benefit-img {
+    margin-left: 350px;
+}
+
+img.b-logo {
+    margin-bottom: 243px;
+    margin-left: 20px;
+    width: 135px;
+}
+
+.block-of-text {
+    margin-top: 289px;
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin-top: 21rem;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.inner-section {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    margin: 5%;
+    min-width: 300px;
+}
